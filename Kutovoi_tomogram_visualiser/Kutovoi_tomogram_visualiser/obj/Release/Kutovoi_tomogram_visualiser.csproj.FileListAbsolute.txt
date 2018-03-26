@@ -1,0 +1,10 @@
+c:\users\sirku\documents\visual studio 2015\Projects\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\bin\Release\Kutovoi_tomogram_visualiser.exe.config
+c:\users\sirku\documents\visual studio 2015\Projects\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\bin\Release\Kutovoi_tomogram_visualiser.exe
+c:\users\sirku\documents\visual studio 2015\Projects\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\bin\Release\Kutovoi_tomogram_visualiser.pdb
+c:\users\sirku\documents\visual studio 2015\Projects\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\bin\Release\OpenTK.dll
+c:\users\sirku\documents\visual studio 2015\Projects\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\bin\Release\OpenTK.GLControl.dll
+c:\users\sirku\documents\visual studio 2015\Projects\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\obj\Release\Kutovoi_tomogram_visualiser.Form1.resources
+c:\users\sirku\documents\visual studio 2015\Projects\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\obj\Release\Kutovoi_tomogram_visualiser.Properties.Resources.resources
+c:\users\sirku\documents\visual studio 2015\Projects\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\obj\Release\Kutovoi_tomogram_visualiser.csproj.GenerateResource.Cache
+c:\users\sirku\documents\visual studio 2015\Projects\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\obj\Release\Kutovoi_tomogram_visualiser.exe
+c:\users\sirku\documents\visual studio 2015\Projects\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\obj\Release\Kutovoi_tomogram_visualiser.pdb
