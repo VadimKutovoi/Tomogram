@@ -54,14 +54,18 @@ namespace Kutovoi_tomogram_visualiser
         {
             if(loaded)
             {
-                //view.DrawQuads(currentLayer);
-                if(needReload)
+                if (radioButton1.Checked)
+                    view.DrawQuads(currentLayer);
+                if (radioButton2.Checked)
                 {
-                    view.generateTextureImage(currentLayer);
-                    view.Load2DTexture();
-                    needReload = false;
+                    if (needReload)
+                    {
+                        view.generateTextureImage(currentLayer);
+                        view.Load2DTexture();
+                        needReload = false;
+                    }
+                    view.DrawTexture();
                 }
-                view.DrawTexture();
                 glControl1.SwapBuffers();
             }
         }
@@ -69,7 +73,7 @@ namespace Kutovoi_tomogram_visualiser
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             currentLayer = trackBar1.Value;
-            needReload = true;
+            if(radioButton2.Checked)needReload = true;
             glControl1_Paint(sender, e);
         }
 
@@ -85,6 +89,16 @@ namespace Kutovoi_tomogram_visualiser
         private void Form1_Load(object sender, EventArgs e)
         {
             Application.Idle += Application_Idle;
+        }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            view.min = trackBar2.Value;
+        }
+
+        private void trackBar3_Scroll(object sender, EventArgs e)
+        {
+            view.width = trackBar3.Value;
         }
     }
 }

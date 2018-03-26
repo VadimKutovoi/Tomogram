@@ -14,6 +14,7 @@ namespace Kutovoi_tomogram_visualiser
     {
         Bitmap textureImage;
         int VBOtexture;
+        public int min = 0, width = 2000;
 
         public void Load2DTexture()
         {
@@ -56,8 +57,7 @@ namespace Kutovoi_tomogram_visualiser
 
         Color TransferFunction(short value)
         {
-            int min = 0;
-            int max = 2000;
+            int max = min + width;
             int newVal = clamp((value - min) * 255 / (max - min), 0, 255);
 
             return Color.FromArgb(255, newVal, newVal, newVal);
