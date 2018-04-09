@@ -55,6 +55,15 @@ namespace Kutovoi_tomogram_visualiser
             GL.Viewport(0, 0, width, height);
         }
 
+        public void SetupViewZ(int width, int height)
+        {
+            GL.ShadeModel(ShadingModel.Smooth);
+            GL.MatrixMode(MatrixMode.Projection);
+            GL.LoadIdentity();
+            GL.Ortho(0, Bin.Y, 0, Bin.Z, -1, 1);
+            GL.Viewport(0, 0, width, height);
+        }
+
         Color TransferFunction(short value)
         {
             int max = min + width;
@@ -98,6 +107,41 @@ namespace Kutovoi_tomogram_visualiser
             GL.End();
         }
 
+        public void DrawQuadsZ(int layerNumber)
+        {
+            GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
+            GL.Begin(BeginMode.Quads);
+
+            for (int y_coord = 0; y_coord < Bin.Y - 1; y_coord++)
+                for (int z_coord = 0; z_coord < Bin.Z - 1; z_coord++)
+                {
+                    short value;
+                    //1
+                    value = Bin.array[y_coord + z_coord * Bin.Y
+                                        + layerNumber * Bin.Y * Bin.Z];
+                    GL.Color3(TransferFunction(value));
+                    GL.Vertex2(y_coord, z_coord);
+                    //2
+                    value = Bin.array[y_coord + (z_coord + 1) * Bin.Y
+                                        + layerNumber * Bin.Y * Bin.Z];
+                    GL.Color3(TransferFunction(value));
+                    GL.Vertex2(y_coord, z_coord + 1);
+                    //3
+                    value = Bin.array[y_coord + 1 + (z_coord + 1) * Bin.Y
+                                        + layerNumber * Bin.Y * Bin.Z];
+                    GL.Color3(TransferFunction(value));
+                    GL.Vertex2(y_coord + 1, z_coord + 1);
+                    //4
+                    value = Bin.array[y_coord + 1 + z_coord * Bin.Y
+                                       + layerNumber * Bin.Y * Bin.Z];
+                    GL.Color3(TransferFunction(value));
+                    GL.Vertex2(y_coord + 1, z_coord + 1);
+                    GL.Color3(TransferFunction(value));
+                    GL.Vertex2(y_coord + 1, z_coord);
+                }
+            GL.End();
+        }
+
         public void generateTextureImage(int layerNumber)
         {
             textureImage = new Bitmap(Bin.X, Bin.Y);
@@ -109,6 +153,7 @@ namespace Kutovoi_tomogram_visualiser
                     textureImage.SetPixel(i, j, TransferFunction(Bin.array[pixelNumber]));
                 }
         }
+
 
         public void DrawTexture()
         {

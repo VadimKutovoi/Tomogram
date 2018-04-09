@@ -24,7 +24,7 @@ namespace Kutovoi_tomogram_visualiser
                 X = reader.ReadInt32();
                 Y = reader.ReadInt32();
                 Z = reader.ReadInt32();
-
+                
                 int arraySize = X * Y * Z;
                 array = new short[arraySize];
                 for (int i = 0; i < arraySize; i++)

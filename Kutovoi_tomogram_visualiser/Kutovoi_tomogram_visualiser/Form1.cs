@@ -43,10 +43,10 @@ namespace Kutovoi_tomogram_visualiser
             {
                 string str = dialog.FileName;
                 binaries.readBin(str);
-                view.SetupView(glControl1.Width, glControl1.Height);
+                view.SetupViewZ(glControl1.Width, glControl1.Height);
                 loaded = true;
                 glControl1.Invalidate();
-                trackBar1.Maximum = Bin.Z - 1;
+                trackBar1.Maximum = Bin.Y - 1;
             }
         }
 
@@ -55,7 +55,7 @@ namespace Kutovoi_tomogram_visualiser
             if(loaded)
             {
                 if (radioButton1.Checked)
-                    view.DrawQuads(currentLayer);
+                    view.DrawQuadsZ(currentLayer);
                 if (radioButton2.Checked)
                 {
                     if (needReload)

@@ -9,3 +9,14 @@ c:\users\sirku\documents\visual studio 2015\Projects\Kutovoi_tomogram_visualiser
 c:\users\sirku\documents\visual studio 2015\Projects\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\obj\Debug\Kutovoi_tomogram_visualiser.csproj.GenerateResource.Cache
 c:\users\sirku\documents\visual studio 2015\Projects\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\obj\Debug\Kutovoi_tomogram_visualiser.exe
 c:\users\sirku\documents\visual studio 2015\Projects\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\obj\Debug\Kutovoi_tomogram_visualiser.pdb
+C:\Users\kutovoj.v\Desktop\Tomogram123\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\bin\Debug\Kutovoi_tomogram_visualiser.exe.config
+C:\Users\kutovoj.v\Desktop\Tomogram123\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\obj\Debug\Kutovoi_tomogram_visualiser.exe
+C:\Users\kutovoj.v\Desktop\Tomogram123\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\obj\Debug\Kutovoi_tomogram_visualiser.pdb
+C:\Users\kutovoj.v\Desktop\Tomogram123\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\bin\Debug\Kutovoi_tomogram_visualiser.exe
+C:\Users\kutovoj.v\Desktop\Tomogram123\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\bin\Debug\Kutovoi_tomogram_visualiser.pdb
+C:\Users\kutovoj.v\Desktop\Tomogram123\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\bin\Debug\OpenTK.dll
+C:\Users\kutovoj.v\Desktop\Tomogram123\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\bin\Debug\OpenTK.GLControl.dll
+C:\Users\kutovoj.v\Desktop\Tomogram123\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\obj\Debug\Kutovoi_tomogram_visualiser.csprojResolveAssemblyReference.cache
+C:\Users\kutovoj.v\Desktop\Tomogram123\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\obj\Debug\Kutovoi_tomogram_visualiser.Form1.resources
+C:\Users\kutovoj.v\Desktop\Tomogram123\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\obj\Debug\Kutovoi_tomogram_visualiser.Properties.Resources.resources
+C:\Users\kutovoj.v\Desktop\Tomogram123\Kutovoi_tomogram_visualiser\Kutovoi_tomogram_visualiser\obj\Debug\Kutovoi_tomogram_visualiser.csproj.GenerateResource.Cache
